@@ -1157,8 +1157,8 @@ button {
   }
   /* Portfolio */
   .portfolio {
-    margin-top: 64px;
-    margin-bottom: 96px;
+    padding-top: 64px;
+    padding-bottom: 96px;
   }
   .portfolio-list {
     width: 768px;
