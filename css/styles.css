@@ -241,7 +241,7 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/bg-mob.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -251,6 +251,17 @@ button {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/bg-mob-2x.jpg);
+  }
 }
 .hero-container {
 }
@@ -916,6 +927,25 @@ button {
   .hero-title {
     font-size: 36px;
   }
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/bg-tab.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/bg-tab-2x.jpg);
+    }
+  }
+
   /* footer */
   .footer-intup {
     width: 398px;
@@ -940,7 +970,17 @@ button {
   .privacy-link {
     font-size: 12px;
   }
+  /* Portfolio */
+  .work-list {
+  }
+  .work-title {
+    font-size: 20px;
+  }
+  .work-item {
+    width: 428px;
+  }
 }
+
 /* Tablet */
 @media screen and (min-width: 768px) {
   .container {
@@ -1029,6 +1069,24 @@ button {
     margin-bottom: 36px;
     max-width: 496px;
   }
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/bd-desk-2x.jpg);
+    }
+  }
 
   /* advantages */
   .advantages-container {
@@ -1096,6 +1154,23 @@ button {
   }
   .modal {
     width: 408px;
+  }
+  /* Portfolio */
+  .portfolio {
+    margin-top: 64px;
+    margin-bottom: 96px;
+  }
+  .portfolio-list {
+    width: 768px;
+  }
+  .work-list {
+    gap: 72px 24px;
+  }
+  .work-item {
+    width: calc((100% - 24px) / 2);
+  }
+  .work-container {
+    width: 768px;
   }
 }
 /* Desktop------------------------------------- */
@@ -1237,5 +1312,20 @@ button {
   }
   .footer-container {
     margin-bottom: 0;
+  }
+  /* portfolio */
+  .portfolio {
+    padding-top: 100px;
+    padding-bottom: 120px;
+  }
+  .portfolio-list {
+    width: 1156px;
+    justify-content: center;
+  }
+  .work-list {
+    gap: 48px 24px;
+  }
+  .work-item {
+    width: calc((100% - 48px) / 3);
   }
 }
