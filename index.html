@@ -22,12 +22,19 @@
   </head>
   <body class="pages">
     <!-- шапка -->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="header-navigation">
-          <a href="./index.html" class="logo link"
-            >Web<span class="logo-studio">Studio</span></a
-          >
+          <div class="header-wrap">
+            <a href="./index.html" class="logo link"
+              >Web<span class="logo-studio">Studio</span></a
+            >
+            <button type="button" class="menu-open-button" data-menu-open>
+              <svg width="32" height="22" class="menu-icon">
+                <use href="./images/icons.svg#icon-menu-converted"></use>
+              </svg>
+            </button>
+          </div>
           <ul class="header-list list">
             <li class="header-item">
               <a class="header-link link bottom-line box" href="./index.html"
@@ -59,7 +66,72 @@
           </ul>
         </address>
       </div>
-    </header> -->
+      <div class="mob-menu is-hidden" data-menu>
+        <button type="button" class="mob-close-btn" data-menu-close>
+          <svg width="8" height="8" class="menu-close-icon">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="mob-list list">
+          <li class="mob-item">
+            <a href="./index.html" class="mob-link link">Studio</a>
+          </li>
+          <li class="mob-item">
+            <a href="./portfolio.html" class="mob-link link">Portfolio</a>
+          </li>
+          <li class="mob-item">
+            <a href="" class="mob-link link">Contacts</a>
+          </li>
+        </ul>
+
+        <div class="">
+          <address class="mob-address">
+            <ul class="mob-address-list list">
+              <li class="mob-address-item">
+                <a href="tel:+110001111111" class="mob-link-tel link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mob-address-item">
+                <a href="mailto:info@devstudio.com" class="mob-link-email link"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="mob-icon-list list">
+            <li class="mob-social-iteam">
+              <a href="" class="mob-social-link link box"
+                ><svg width="24" height="24" class="mob-social-icon">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-social-iteam">
+              <a href="" class="mob-social-link link box">
+                <svg width="24" height="24" class="mob-social-icon">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-social-iteam">
+              <a href="" class="mob-social-link link box"
+                ><svg width="24" height="24" class="mob-social-icon">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-social-iteam">
+              <a href="" class="mob-social-link link box"
+                ><svg width="24" height="24" class="mob-social-icon">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
     <main>
       <!-- секція 1- hero -->
       <section class="hero">
@@ -519,6 +591,7 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <script src="./js/modal.js" type="module"></script>
+    <script src="./js/mobile-menu.js" type="module"></script>
   </body>
 </html>
