@@ -179,6 +179,9 @@ button {
   letter-spacing: 0.02em;
   color: var(--title-text-color);
 }
+.mob-color {
+  color: var(--hover-focus-color);
+}
 
 .mob-link:focus {
   color: var(--hover-focus-color);
@@ -192,7 +195,7 @@ button {
 .mob-link-tel {
   display: block;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 24px;
   line-height: 1.07;
   font-style: normal;
   letter-spacing: 0.02em;
@@ -214,7 +217,7 @@ button {
 .mob-icon-list {
   display: flex;
   align-items: center;
-  gap: 36px;
+  gap: 24px;
 }
 .mob-social-iteam {
   width: 40px;
@@ -711,9 +714,9 @@ button {
 }
 .modal {
   position: absolute;
-  width: 310px;
-  height: 586px;
-  padding: 52px 20px 20px 20px;
+  width: calc(100% - 30px);
+
+  padding: 72px 20px 20px 20px;
 
   top: 50%;
   left: 50%;
@@ -754,7 +757,7 @@ button {
 .modal-title {
   margin-bottom: 16px;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 1.4;
   text-align: center;
   letter-spacing: 0.02em;
@@ -1137,6 +1140,9 @@ button {
     margin-left: 0;
     margin-right: 0;
   }
+  .logo-footer {
+    text-align: start;
+  }
   .footer-text-icon {
     text-align: start;
   }
@@ -1154,6 +1160,7 @@ button {
   }
   .modal {
     width: 408px;
+    height: 586px;
   }
   /* Portfolio */
   .portfolio {
@@ -1307,6 +1314,7 @@ button {
     justify-content: space-between;
     align-items: center;
   }
+
   .footer-wrap-mob {
     margin-bottom: 0;
   }
